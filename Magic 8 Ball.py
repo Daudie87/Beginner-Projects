@@ -7,7 +7,7 @@ print "Welcome to the Magic 8 ball!"
 
 i = 1
 while i == 1:
-    question = raw_input("Please enter your question: ")
+    question = raw_input("Ask me a question: ")
 
     print "Thinking ..."
 
