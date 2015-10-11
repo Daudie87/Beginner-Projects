@@ -1,22 +1,33 @@
-count = 99
+def firstVerse(count, bottleTense):
+    firstVerse = "%s %s of beer on the wall, %s %s of beer." % (count, bottleTense, count, bottleTense)
+    print firstVerse
 
-while count > 1:
-    print "%s bottles of beer on the wall, %s bottles of beer." % (count, count)
-    count -= 1
-    if count > 1:
-        print "Take one down and pass it around, %s bottles of beer on the wall!" % count
-        print ""
-    elif count == 1:
-        print "Take one down and pass it around, %s bottle of beer on the wall!" % count
-        print ""
+def secondVerse(count, bottleTense):
+    secondVerse = "Take one down and pass it around, %s %s of beer on the wall!\n" % (count, bottleTense)
+    print secondVerse
 
-while count == 1:
-    print "%s bottle of beer on the wall, %s bottle of beer." % (count, count)
-    count -= 1
-    print "Take one down and pass it around, no more bottles of beer on the wall!"
-    print ""
+def lyrics():
+    count = 99
+    bottleTense = "bottles"
 
-while count == 0:
-    print "No more bottles of beer on the wall, no more bottles of beer."
+    while count > 1:
+        firstVerse(count, bottleTense)
+        count -= 1
+
+        if count > 1:
+            secondVerse(count, bottleTense)
+        elif count == 1:
+            bottleTense = "bottle"
+            secondVerse(count, bottleTense)
+
+    firstVerse(count, bottleTense)
+
+    count = "no more"
+    bottleTense = "bottles"
+    secondVerse(count, bottleTense)
+
+    count = "No more"
+    firstVerse(count, bottleTense)
     print "Go to the store and buy some more, 99 bottles of beer on the wall!"
-    break
+
+print lyrics()
