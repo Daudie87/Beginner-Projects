@@ -1,10 +1,10 @@
 def firstVerse(count, bottleTense):
     firstVerse = "%s %s of beer on the wall, %s %s of beer." % (count, bottleTense, count, bottleTense)
-    print firstVerse
+    print(firstVerse)
 
 def secondVerse(count, bottleTense):
     secondVerse = "Take one down and pass it around, %s %s of beer on the wall!\n" % (count, bottleTense)
-    print secondVerse
+    print(secondVerse)
 
 def lyrics():
     count = 99
@@ -28,6 +28,6 @@ def lyrics():
 
     count = "No more"
     firstVerse(count, bottleTense)
-    print "Go to the store and buy some more, 99 bottles of beer on the wall!"
+    print("Go to the store and buy some more, 99 bottles of beer on the wall!\n")
 
-print lyrics()
+lyrics()

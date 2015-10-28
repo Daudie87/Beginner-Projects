@@ -21,4 +21,3 @@ while True:
         break
 
 print("\nGoodbye!")
-
