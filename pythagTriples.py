@@ -1,7 +1,7 @@
 while True:
-    side_1 = int(raw_input("Enter a side: ")) ** 2
-    side_2 = int(raw_input("Enter another side: ")) ** 2
-    side_3 = int(raw_input("Enter another side: ")) ** 2
+    side_1 = int(input("Enter a side: ")) ** 2
+    side_2 = int(input("Enter another side: ")) ** 2
+    side_3 = int(input("Enter another side: ")) ** 2
 
     statement = "\nThis is a pythagorean triple."
     not_statement = "\nThis is not a pythagorean triple."
@@ -12,13 +12,13 @@ while True:
     triangle.remove(hypotenuse)
 
     if sum(triangle) == hypotenuse:
-        print statement
+        print(statement)
     else:
-        print not_statement
+        print(not_statement)
 
-    count = raw_input("\nWould you like to go again? (y/n) ")
+    count = input("\nWould you like to go again? (y/n) ")
     if count == 'n':
         break
 
-print "\nGoodbye!"
+print("\nGoodbye!")
 
