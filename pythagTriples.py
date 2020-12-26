@@ -16,8 +16,13 @@ while True:
     else:
         print(not_statement)
 
-    count = input("\nWould you like to go again? (y/n) ")
-    if count == 'n':
+    count = input("\nWould you like to go again?")
+    if count.lower() == 'n'or count.lower()=='no':
+        break
+    elif count.lower() == 'y'or count.lower()=='yes':
+        continue
+    else:
+        print("Please answer in yes - no OR y-n")
         break
 
 print("\nGoodbye!")
